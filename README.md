@@ -9,3 +9,4 @@
 - [ ] Diffusion Model
 - [ ] ResNet
 - [ ] U-Net
+- [ ] GAN
