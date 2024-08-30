@@ -1,5 +1,5 @@
 use anyhow::Result;
-use tch::{nn::{self, Module}, utils};
+use tch::{nn::{self, batch_norm2d, BatchNorm, Module}, utils};
 
 struct CNN {
     norm: nn::BatchNorm,
@@ -11,7 +11,7 @@ struct CNN {
 impl CNN {
     fn new(vs: &nn::Path) -> Self {
         CNN {
-            norm: 
+            norm: batch_norm2d(vs, out_dim, config)
         }
     }
 }
